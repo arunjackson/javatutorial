@@ -1,0 +1,285 @@
+package com.javatutorial.java;
+
+public class switchh {
+void answers(int y)
+	{
+   switch(y)
+	{
+	case 1: System.out.println("•	keywords are reserved words in java which have special function and definition in programming language.\n"
+			+ "•	there 52 keywords\n"
+			+ "");
+	break;
+	case 2:System.out.println("•	Symbolic names used for identification \n"
+			+ "•	RULES FOR IDENTIFIERS \n"
+			+ "•	Identifiers should start with alphabets or _   or  $  or any currency symbol\n"
+			+ "•	No space allowed\n"
+			+ "•	No special characters except $(any currency symbol ) and _\n"
+			+ "•	Keywords cannot be used as identifiers\n"
+			+ "");	
+	break;
+	case 3:System.out.println("TYPES OF DATATYPE\n"
+			+ "•	Primitive datatype \n"
+			+ "-	Helps us to store values \n"
+			+ "•	Non-primitive datatype\n"
+			+ "-	Helps us to store address of the object\n"
+			+ "PRIMITIVE DATATYPE ( 8 TYPES ARE THERE )\n"
+			+ "•	byte=1 byte      (-128 to 127)\n"
+			+ "•	short=2 byte    (-32768 to 32767)\n"
+			+ "•	int=4 byte.        (-2147483648 to 2147483647)\n"
+			+ "•	long = 8 byte\n"
+			+ "•	float= 4 byte\n"
+			+ "•	double = 8 byte\n"
+			+ "•	char=2 byte\n"
+			+ "•	Boolean =undefined size\n"
+			+ "");
+	break;
+	case 4:System.out.println("It is a named memory location to store value \n"
+			+ "Syntax: \n"
+			+ "datatype variablename;\n"
+			+ "");
+	break;
+	case 5:System.out.println("1.Based on the number of arguments \n"
+			+ "•unary operator\n"
+			+ "•binary operator\n"
+			+ "\n"
+			+ "2.based on operation \n"
+			+ "•	arithmetic \n"
+			+ "•	relational \n"
+			+ "•	logical\n"
+			+ "•	assignment \n"
+			+ "•	increment and decrement \n"
+			+ "");
+	break;
+	case 6:System.out.println("•	if \n"
+			+ "•	if else\n"
+			+ "•	if else if \n"
+			+ "•	nested if \n"
+			+ "•	switch case\n"
+			+ "");
+	break;
+	case 7:System.out.println("Looping statements \n"
+			+ "•	for loop\n"
+			+ "•	nested for loop\n"
+			+ "•	while loop \n"
+			+ "•	do while loop \n"
+			+ "");
+	break;
+	case 8:System.out.println(" Class Classname \n"
+			+ "{\n"
+			+ "1.data member \n"
+			+ "2.member functions\n"
+			+ "3.constructor\n"
+			+ "4.blocks\n"
+			+ "5.inner class\n"
+			+ "}\n"
+			+ " ");
+	System.out.println("Types of member \n"
+			+ "*	Every member of class except constructor can be categorised into two types\n"
+			+ "1.	Static member \n"
+			+ "•	The members declared with static keyword\n"
+			+ "2.	Non-static member \n"
+			+ "•	Members declared without static keyword\n"
+			+ " ");
+	 System.out.println("	ACCESSING MEMBER OF CLASS\n"
+	 		+ "1.	Accessing static member of same class\n"
+	 		+ "•	Call directly with their name\n"
+	 		+ "2.	Accessing static members of different class\n"
+	 		+ "•	Classname .membername;\n"
+	 		+ "3.	Accessing nonstatic member of same class\n"
+	 		+ "4.	Accessing nonstatic member of different class\n"
+	 		+ "\n"
+	 		+ "Syntax for object creation : \n"
+	 		+ "•	new classname();\n"
+	 		+ "Syntax for accessing non static members : \n"
+	 		+ "•	new classname().membername \n"
+	 		+ "");
+	 System.out.println("Reference variable \n"
+	 		+ "•	Reference variable is a non-primitive variable which is used to store address of the object\n"
+	 		+ "•	Syntax: \n"
+	 		+ "          classname ref= new classname();\n"
+	 		+ "•	The data type of a reference variable is classname\n"
+	 		+ "");
+	 System.out.println(" 1.Class\n"
+	 		+ "•	Class is logically existing entity which describes states and behaviours\n"
+	 		+ "2.Object \n"
+	 		+ "•	Object is a physically existing entity which has states and behaviours\n"
+	 		+ "");
+	break;
+	case 9:System.out.println("Class loader \n"
+			+ "Class loader is a component present inside JVM whenever a class loader is called by JVM the class loader will perform following 2 operations\n"
+			+ "1.	Class loader will load  .class file the class which is mentioned in execution command\n"
+			+ "2.	After loading dot class file the class loader will create separate pool in the static pool area for the mentioned class and it loads the static members of the class inside the separate pool created\n"
+			+ "3.	After class loader completing its operation JVM will internally call main method present in .classfile to start the execution of the program\n"
+			+ "4.	Whenever a method is called in Java JVM will take the declaration and bind the definition which is present in method area and loads it on top of stack \n"
+			+ "5.	The execution of the method happens in stack\n"
+			+ "6.	In Java if we are accessing any member without . (dot)operator JVM searches for that member in the same class area where main method is loaded\n"
+			+ "7.	After execution of the method in stack it will be removed from stack\n"
+			+ "8.	Whenever JVM find a new class name for the first time JVM internally call the  class loader\n"
+			+ "9.	New operator will create the object in heap memory\n"
+			+ "10.	At the end of main method garbage collector will destroy the objects in the heap memory\n"
+			+ "");
+	case 10: System.out.println(" MEMORY \n"
+			+ "1.	Stack is a execution area \n"
+			+ "o	Whenever we call a method the cold method will be loaded desecrated in the stack\n"
+			+ "o	After execution it will remove from stack\n"
+			+ "o	The called method will come on top of calling method in the stack\n"
+			+ "o	Main method is the first method which enters the stack\n"
+			+ "2.	Heap memory\n"
+			+ "o	Heap memory is reserved for Java object\n"
+			+ "o	Inside Java object non-static data member and non-static method declaration will be stored\n"
+			+ "o	Garbage collector destroys the objects after the execution of main method\n"
+			+ "3.	Static pool area\n"
+			+ "o	Static pool is reserved for static members of class\n"
+			+ "o	A separate pool will be created for every class loaded by class loader\n"
+			+ "o	Inside that separate pool static data members and static method declaration will be stored\n"
+			+ "4.	Method area\n"
+			+ "o	Method area will store method definition of static and non-static methods\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "Note : \n"
+			+ "o	We can access static members using reference variable but it is not recommended to use this syntax\n"
+			+ "o	In Java one object can have any number of reference variables\n"
+			+ "o	One reference variable can point to only one object at a time any object existing in heap variable without reference variable will be considered as  Dereferenced object\n"
+			+ "o	The dereferenced object will be destroyed by the garbage collector before the main method\n"
+			+ "");
+		break;
+	case 11:System.out.println(" Syntax: classname(input arguments)\n"
+			+ "{\n"
+			+ "//initialize non static members \n"
+			+ "}\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "Types of constructor \n"
+			+ "     There are 2 types of constructor\n"
+			+ "1.	Default constructor\n"
+			+ "o	If the programmer has not written any constructor within the class then the Java compiler will implicitly write 1 zeroargument constructor which is called as default constructor\n"
+			+ "2.	Programmer defined the constructor\n"
+			+ "           There are 2 types of programmer defined constructor\n"
+			+ "o	Constructor without arguments\n"
+			+ "o	Constructor with arguments\n"
+			+ "\n"
+			+ "this keyword\n"
+			+ "o	This keyword holds the address of current class subject\n"
+			+ "o	This keyword used to differentiate global variable and local variable having same name\n"
+			+ "");
+	System.out.println("Constructor overloading\n"
+			+ "o	Defining multiple constructor inside the class having same name which differs in arguments are either by size , type or position is called as constructor overloading\n"
+			+ "Note:\n"
+			+ "o	at the time of object creation new operator can call only one constructor based on the arguments matching\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "this()  statement\n"
+			+ "o	This statement is used to call another constructor present in same class\n"
+			+ "Rules for this() statement \n"
+			+ "o	This statement should be the first statement within a constructor body\n"
+			+ "o	We cannot write more than one this statement within a single constructor\n"
+			+ "o	Recursive constructor allocation not allowed\n"
+			+ "");
+		break;
+	case 12:System.out.println(" One class acquiring the properties of another class is known as inheritance");
+	System.out.println(" Super class\n"
+			+ "The class from where we acquire properties is called superclass\n"
+			+ "\n"
+			+ "Subclass\n"
+			+ "The class which is acquiring the property is called as subclass\n"
+			+ "\n"
+			+ "Note:\n"
+			+ "1.	Subclass will always acquire properties of super class but super class cannot acquire properties of subclass\n"
+			+ "2.	If we create object of subclass the subclass object will have the properties of both superclass and subclass\n"
+			+ "3.	In Java inheritance is called as IS-A relationship\n"
+			+ "4.	Sub class cannot acquire each and every property present in superclass there are some properties which cannot be inherited they are:\n"
+			+ "o	Static members of super class\n"
+			+ "o	Constructors of super class\n"
+			+ "\n"
+			+ "Types of inheritance\n"
+			+ "1.	Single inheritance\n"
+			+ "2.	Multilevel inheritance\n"
+			+ "3.	Multiple inheritance\n"
+			+ "4.	Hierarchical inheritance\n"
+			+ "5.	Hybrid inheritance\n"
+			+ "\n"
+			+ "");
+	 System.out.println(" 1.	Single inheritance\n"
+	 		+ "o	A single subclass acquiring the property from single superclass\n" 
+	 		+ "2.	Multilevel inheritance\n"
+	 		+ "o	One subclass acquiring the property from one super class and that super class acquiring property from its own super class which can repeat up to any number of super class\n"
+	 		+ "3.	Multiple inheritance\n"
+	 		+ "o	One subclass acquiring the property from one superclass is called as multiple inheritance \n"
+	 		+ "4.	Hierarchical inheritance\n"
+	 		+ "o	Multiple sub classes acquiring property from one common superclass is called as hierarchical inheritance\n"
+	 		+ "5.	Hybrid inheritance\n"
+	 		+ "o	Combination of more than one type of inheritance is called as hybrid inheritance\n"
+	 		+ "");
+	 System.out.println(" ");
+	 System.out.println("NOTE ");
+	 System.out.println(" If there is any class in Java without extends keyword by the default compiler will extend from object class and the inbuilt object class has 11 non-static method hence by default each and every class in Java directly or indirectly acquires the property of object class ");
+		break;
+	case 13:System.out.println(" 1.	Method overloading \n"
+			+ "o	Defining multiple methods inside the class which differs in arguments , size , type or position\n"
+			+ "Note:  \n"
+			+ "o	We can overload static method\n"
+			+ "o	JVM will always call and execute main method with string array arguments\n"
+			+ "");
+		break;
+	case 14:System.out.println( " 2.	Method overriding \n"
+			+ "o	Inheriting a method from super class changing its implementation in subclass without changing its declaration\n"
+			+ "Note: \n"
+			+ "o	In case of method overriding object created will bind the method declaration with the method definition\n"
+			+ "o	We cannot override static method\n"
+			+ "o	Inheritance is mandatory for method overriding the things which cannot be inherited cannot be over written.\n"
+			+ " Example : static methods of super class and constructor\n"
+			+ "");
+		break;
+	case 15:System.out.println( " CONCEPTS OF ABSTRACTION \n"
+			+ "1.	Concrete method\n"
+			+ "The method which has both declaration and definition is called as concrete method \n"
+			+ "Ex.       Void test()\n"
+			+ "           {\n"
+			+ "            System.out.println(“test method “);\n"
+			+ "           }\n"
+			+ "2.	Abstract method\n"
+			+ "The method which has only declaration without definition is considered as abstract method \n"
+			+ "Ex.  Abstract void test(); \n"
+			+ "RULES FOR ABSTRACT METHOD \n"
+			+ "•	abstract method should be declared with abstract keyword \n"
+			+ "•	abstract method should not have body , it end with ;\n"
+			+ "•	abstract method should be written in abstract class \n"
+			+ "3.	Abstract class \n"
+			+ "*class declared with abstract keyword \n"
+			+ "RULES \n"
+			+ "•	we cannot create object for abstract class \n"
+			+ "4.	Concrete class\n"
+			+ "*class declared without abstract key word \n"
+			+ "RULES \n"
+			+ "•	We cannot write abstract in concrete class \n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "\n"
+			+ "NOTE :\n"
+			+ "If any subclass is acquiring abstract method from abstract class then the subclass has to satisfy one of the following two conditions \n"
+			+ "1.	Declare the class object \n"
+			+ "2.	Or provide the implementation for inherited abstract method and make it concrete \n"
+			+ "");
+	break;
+	default: System.out.println("wrong selection");
+	}
+  
+ 
+
+				
+}
+
+}
+
